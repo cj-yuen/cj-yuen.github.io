@@ -1,0 +1,205 @@
+/* Reset some default styles to ensure consistency across browsers */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  
+  /* Apply a basic global font and set a background color */
+  body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Style the header with navigation */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  /* Style the main content area */
+  main {
+    max-width: 90%; /* Adjust the max-width */ 
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the footer */
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Style individual sections as needed */
+  section {
+    margin-bottom: 30px;
+  }
+  
+
+  /* About Me Page */
+  .profile-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-photo {
+    max-width: 150px; /* Adjust the max-width as needed */
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .profile-text h1 {
+    font-size: 2em; /* Adjust the font size as needed */
+    font-weight: bold;
+  }
+  
+  .profile-text p {
+    font-size: 1em;
+    line-height: 1.6;
+  } 
+
+  /* New styles for Education and Hobbies sections */
+  .sections-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px; /* Add margin for spacing */
+  }
+
+  .education-section,
+  .hobbies-section {
+    width: 40%; /* Adjust the width as needed, leaving some space for margin */
+  }
+
+  .education-section h2,
+  .hobbies-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+
+  /* Style the content within each section as needed */
+  .education-section p,
+  .hobbies-section ul {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+
+  /* Style the education header with logo */
+  .education-header {
+    display: flex;
+    align-items: center;
+  }
+
+  .university-logo {
+    max-width: 200px; /* Adjust the max-width as needed */
+    margin-left: 60px; /* Adjust the margin as needed */
+  }
+
+  .education-section h2 {
+    font-size: 1.8em; /* Adjust the font size as needed */
+    margin-bottom: 10px;
+  }
+
+
+  /* Projects Page */
+
+  .project {
+    margin-bottom: 20px;
+  }
+
+  .project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .project-description {
+    margin-top: 10px;
+  }
+
+  .project-description h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  .project-description p {
+    font-size: 1em;
+    line-height: 1.4;
+  }
+
+  .learn-more {
+    margin-top: 10px;
+  }
+
+  .toggle-btn {
+    cursor: pointer;
+    color: #007BFF;
+    display: inline-block;
+  }
+
+  .details-content {
+    display: none;
+  }
+
+  .open .toggle-btn::after {
+    content: '^';
+  }
+
+  #project-details-toggle:checked + .details-content {
+    display: block;
+  }
+
+  /* Work Experience Page */
+
+  .experience {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .experience img {
+    max-width: 100px;
+    margin-right: 20px;
+  }
+  
+  .experience .experience-details {
+    flex-grow: 1;
+  }
+  
+  .experience h2 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+  }
+  
+  .experience .company {
+    font-weight: bold;
+  }
+  
+  .experience .date {
+    color: #555;
+  }
